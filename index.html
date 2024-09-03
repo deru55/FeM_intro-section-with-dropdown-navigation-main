@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrapper-header">
+        <a href="#"><img src="images/logo.svg" alt="" /></a>
+
+        <button class="mobile-nav-toggle | btn" aria-expanded="false"></button>
+
+        <nav class="primary-navigation primary-navigation--msScreen">
+          <ul class="grid-row">
+            <li>
+              <div class="dropdown">
+                <button class="btn btn--dropdown" aria-expanded="false">
+                  Features
+                  <div>
+                    <svg
+                      width="10"
+                      height="6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon-arrow"
+                    >
+                      <path
+                        stroke="var(--clr, #686868)"
+                        stroke-width="1.5"
+                        fill="none"
+                        d="m1 1 4 4 4-4"
+                      />
+                    </svg>
+                  </div>
+                </button>
+
+                <div class="dropdown-content dropdown-content--features">
+                  <a href="#"
+                    ><img src="images/icon-todo.svg" alt="" />Todo List</a
+                  >
+
+                  <a href="#"
+                    ><img src="images/icon-calendar.svg" alt="" />Calendar</a
+                  >
+
+                  <a href="#"
+                    ><img src="images/icon-reminders.svg" alt="" />Reminders</a
+                  >
+
+                  <a href="#"
+                    ><img src="images/icon-planning.svg" alt="" />Planning</a
+                  >
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="dropdown">
+                <button class="btn btn--dropdown" aria-expanded="false">
+                  Company
+                  <div>
+                    <svg
+                      width="10"
+                      height="6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon-arrow"
+                    >
+                      <path
+                        stroke="var(--clr, #686868)"
+                        stroke-width="1.5"
+                        fill="none"
+                        d="m1 1 4 4 4-4"
+                      />
+                    </svg>
+                  </div>
+                </button>
+
+                <div class="dropdown-content">
+                  <a href="#">History</a>
+                  <a href="#">Our Team</a>
+                  <a href="#">Blog</a>
+                </div>
+              </div>
+            </li>
+
+            <li><a href="#">Careers</a></li>
+
+            <li><a href="#">About</a></li>
+          </ul>
+
+          <ul class="grid-row">
+            <li>
+              <a href="#">Login</a>
+            </li>
+
+            <li>
+              <button class="btn btn--rounded btn--rounded--register">
+                Register
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="wrapper-narrow grid-2-cols text-align-center-ssS">
+        <picture>
+          <source
+            media="(min-width:1025px)"
+            srcset="images/image-hero-desktop.png"
+          />
+          <img src="images/image-hero-mobile.png" alt="" />
+        </picture>
+
+        <div class="padding-inline grid-section">
+          <div class="grid-flow">
+            <h1>Make remote work</h1>
+
+            <p class="txt-width-msS">
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+
+            <button class="btn btn--rounded btn--rounded--learn-more fw-bold">
+              Learn more
+            </button>
+          </div>
+
+          <div class="clients-list | grid-row">
+            <img src="images/client-databiz.svg" alt="" />
+            <img src="images/client-audiophile.svg" alt="" />
+            <img src="images/client-meet.svg" alt="" />
+            <img src="images/client-maker.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
